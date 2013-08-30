@@ -1,4 +1,4 @@
-var LeapPong = window.LeapPong = Ember.Application.create();
+var Pong = window.Pong = Ember.Application.create();
 
 /* Order and include as you please. */
 require('scripts/controllers/*');

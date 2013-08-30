@@ -1,3 +1,3 @@
-LeapPong.Store = DS.Store.extend({
+Pong.Store = DS.Store.extend({
     adapter: DS.FixtureAdapter.create()
 });

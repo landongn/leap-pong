@@ -1,3 +1,3 @@
-LeapPong.Router.map(function () {
-  
+Pong.Router.map(function () {
+
 });
