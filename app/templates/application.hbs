@@ -3,7 +3,7 @@
         <div class="navbar-inner">
             <div class="container-fluid">
                 <div class="brand">
-                    Your App
+                    {{#linkTo 'index'}}LEAPONG{{/linkTo}}
                 </div>
             </div>
         </div>
@@ -13,8 +13,8 @@
             <div>
                 <div class="span3">
                     <div class="well sidebar-nav">
-                        <span class="nav-header">new game</span>
-
+                        <h3>{{#linkTo 'playfield'}}new game{{/linkTo}}</h3>
+                        <h3>{{#linkTo 'setup.add'}}add players{{/linkTo}}</h3>
                     </div>
                 </div>
                 <div class="span9">
