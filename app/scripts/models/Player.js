@@ -7,6 +7,7 @@ Pong.Player = Ember.Object.extend({
 
 Pong.Players = Ember.Object.extend({
     players: [],
+    paddle: null,
     findall: function () {
         return this.players;
     },
