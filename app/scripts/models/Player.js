@@ -28,3 +28,28 @@ Pong.currentPlayers.players.push(Pong.Player.create({
     positionTop: 0,
     positionLeft: 0
 }));
+
+
+Leap.loop({}, function(frame) {
+    var leftHand, rightHand, hand;
+
+    for (var i = 0; i < frame.hands.length; i++) {
+        hand = frame.hands[i];
+        if (!leftHand) {
+            leftHand = hand;
+        }
+        if (!rightHand) {
+            rightHand = hand;
+        }
+        if (hand.palmPosition[0] > rightHand.palmPosition[0]) {
+            rightHand = hand;
+        }
+        if (hand.palmPosition[0] < leftHand.palmPosition[0]) {
+            leftHand = hand;
+        }
+    }
+
+    if (leftHand && rightHand && leftHand !== rightHand) {
+        console.log(~~leftHand.palmPosition[1], ~~rightHand.palmPosition[1]);
+    }
+});

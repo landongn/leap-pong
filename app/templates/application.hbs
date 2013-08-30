@@ -16,6 +16,11 @@
                         <h3>{{#linkTo 'playfield'}}new game{{/linkTo}}</h3>
                         <h3>{{#linkTo 'players.add'}}add players{{/linkTo}}</h3>
                     </div>
+                    <div class="well sidebar-nav">
+                        {{#each player}}
+                            {{name}}
+                        {{/each}}
+                    </div>
                 </div>
                 <div class="span9">
                     {{outlet}}
